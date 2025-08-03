@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+
+}
+
+body {
+    background-color: #0a0909;
+
+}
+
+
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #0a0909;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.titulo-principal {
+    margin-top: 60px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    /*-letras espaçadas*/
+    line-height: 2.3em;
+    /* -linhas com autura almentada*/
+    font-weight: 600;
+    /* -texto em negrito*/
+    color: #0039e3;
+    text-shadow: 0px 0px 10px #fff;
+    /*-sombra branca ao texto*/
+    position: relative;
+    /*posicao relativa*/
+    /* animation*/
+}
+
+
+.image-sabores {
+    width: 160px;
+}
+
+/*------------Gotas Animadas---------*/
+
+.container {
+    position: relative;
+    overflow: hidden;
+    /*O overflow é uma propriedade CSS que controla o que acontece quando o conteúdo de
+     um elemento ultrapassa seus limites, permitindo escolher entre exibir, cortar ou adicionar scrollbars.*/
+
+}
+
+.gota {
+    width: 15px;
+    height: 20px;
+    background: radial-gradient(circle, #a3d9f8, #007acc);
+    border-radius: 50% 50% 60% 40% / 60% 60% 40% 40%;
+    /*-uma forma redonda e ierregular*/
+    box-shadow: 0 010px rgba(0, 122, 204, 0.5);
+    /*-uma sombra azul*/
+    position: fixed;
+    /*posição fixa na tela*/
+    opacity: 0.7;
+    /*opacidade ligeiramente reduzida*/
+    animation: cair 5s infinite ease-in;
+    /*uma animação que se repete infinitamente*/
+    z-index: 9999;
+}
+
+.gota:nth-child(1) {
+    left: 10%;
+    /*- Uma posição horizontal definida como 10% da largura do contêiner*/
+    animation-delay: 0s;
+    /*a animação comessara ligeiramente sem atraso*/
+}
+
+.gota:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.gota:nth-child(3) {
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.gota:nth-child(4) {
+    left: 80%;
+    animation-delay: 3s;
+}
+
+.gota:nth-child(4) {
+    left: 80%;
+    animation-delay: 3s;
+
+}
+
+.gota:nth-child(5) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+@keyframes cair {
+    0% {
+        top: -20px;
+        opacity: 0;
+        transform: scale(0.8)
+            /*Com scale(0.8), você pode criar um efeito de redução suave
+         e atraente para o elemento*/
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+        transform: scale(1);
+
+    }
+}
+
+.titulo-principal {
+    position: relative;
+}
+
+.red-social {
+    position: absolute;
+    justify-content: flex-end;
+    /*jogou o item para a direita*/
+    top: 0;
+    right: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    margin-right: 20px
+}
+
+.item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.red-social a {
+    text-decoration: none;
+    color: #0039e3;
+    font-weight: 600;
+    /*Com font-weight, você pode controlar a espessura da fonte e criar]
+     uma hierarquia visual eficaz no seu texto!*/
+    text-shadow: 0px 0px 10px #fff;
+}
+
+/* animação barra carregamento rede social*/
+
+.barra-carregamento {
+    width: 100%;
+    height: 2px;
+    background-color: #0039e3;
+    transition: width 0.5s;
+    /*Uma transição suave para mudanças na largura*/
+    animation: carregamento 2.5s infinite;
+    /*Uma animação que se repete infinitamente*/
+    margin-bottom: 7px
+}
+
+#barra-whatsapp {
+    animation: carregamento 2.5s infinite;
+    background: linear-gradient(to right, #ffffff, #25d366);
+}
+
+#barra-facebook {
+    animation: carregamento 2.5s infinite;
+    background: linear-gradient(to right, #ffffff, #1877f2)
+}
+
+#barra-instagram {
+    animation: carregamento 2.5s infinite;
+    background: linear-gradient(to right, #f58529, #8134af, #515bd4)
+}
+
+@keyframes carregamento {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.mao-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Posicionar elementos no centro de um contêiner*/
+    z-index: 1000;
+    display: block;
+}
+
+.mao-rede {
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+    ;
+}
+
+
+.h3-efeitos-coloridos {
+    font-weight: 500;
+    /* você pode controlar a espessura da fonte*/
+    font-size: 56px;
+    /* Criar uma hierarquia visual com títulos e cabeçalhos de diferentes tamanhos*/
+    letter-spacing: 2px;
+    /*espaçamento entre las letras*/
+    background-clip: text;
+    /*- Criar efeitos de texto com fundo colorido ou imagem*/
+    -webkit-background-clip: text;
+    /*Essa propriedade é usada em combinação com background-clip: text;
+     para garantir compatibilidade com diferentes navegadores.*/
+    color: transparent;
+    background-image: linear-gradient(270deg, #25d366, #1877f2, #f58529, #8134af, #515bd4);
+    background-size: 1000% 100%;
+    /*
+Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combinado]
+ com outras propriedades, como background-position.*/
+    animation: gradient 10s infinite ease-in-out;
+
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.mao-container {
+    animation: efeito-mao 15s infinite ease-in-out;
+
+}
+
+@keyframes efeito-mao {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    40% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    50% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    60% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    65% {
+        opacity: 0.2;
+        filter: blur(8px);
+
+    }
+
+    75% {
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+
+    85% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+.h2-c {
+    color: #0039e3;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 10px #fff;
+
+}
+
+.ol-sabores ol {
+    color: #0039e3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.ol-sabores li {
+    width: calc(30.33% - 10px);
+    font-size: 18px;
+    color: #0039e3;
+    margin-bottom: 10px;
+}
+
+.container-c {
+    margin-top: 250px;
+    margin-left: 70px;
+}
+
+.ol-sabores li:nth-child(1) {
+    color: gold;
+}
+
+.ol-sabores li:nth-child(2) {
+    color: peru
+}
+
+.ol-sabores li:nth-child(3) {
+    color: #8134af;
+}
+
+.ol-sabores li:nth-child(4) {
+    color: #a3d9f8;
+}
+
+.ol-sabores li:nth-child(5) {
+    color: #ffffff;
+}
+
+.ol-sabores li:nth-child(6) {
+    color: deeppink;
+
+}
+
+
+
+.ol-sabores li:nth-child(7) {
+    color: rgba(210, 105, 30, 0.562);
+}
+
+.ol-sabores li:nth-child(8) {
+    color: bisque;
+}
+
+.ol-sabores li:nth-child(9) {
+    color: #f0720c;
+}
+
+.ol-sabores li:nth-child(10) {
+    color: hotpink;
+}
+
+.ol-sabores li:nth-child(11) {
+    color: mediumvioletred;
+}
+
+.ol-sabores li:nth-child(12) {
+    color: #fff;
+}
+
+.ol-sabores li:nth-child(13) {
+    color: lime;
+}
+
+.ol-sabores li:nth-child(14) {
+    color: #f58529;
+}
+
+.ol-sabores li:nth-child(15) {
+    color: springgreen;
+}
+
+
+.ol-sabores li:nth-child(16) {
+    color: red;
+}
+
+.ol-sabores li:nth-child(17) {
+    color: yellowgreen;
+}
+
+.ol-sabores li:nth-child(18) {
+    color: yellow
+}
+
+.ol-sabores li:nth-child(19) {
+    color: #25d366;
+}
+
+.ol-sabores li:nth-child(20) {
+    color: wheat;
+}
+
+.ol-sabores li:nth-child(21) {
+    color: orangered;
+}
+
+.ol-sabores li:nth-child(22) {
+    color: #9d11ed;
+}
+
+.ol-sabores li:nth-child(23) {
+    color: steelblue;
+}
