@@ -462,3 +462,9 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
 .ol-sabores li:nth-child(23) {
     color: steelblue;
 }
+
+.ol-sabores li img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
