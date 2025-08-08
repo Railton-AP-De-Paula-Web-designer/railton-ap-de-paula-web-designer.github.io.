@@ -530,9 +530,9 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     background-color: #6a4023;
     color: peru;
     text-shadow: 0 0 5px rgba(0. 0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(165, 115, 42, 0.7);
+    box-shadow: 0 0 20px rgba(165, 115, 42, 0,7);
 }
-.contaner-amemdoin h2{
+.contaner-amendoin h2{
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;

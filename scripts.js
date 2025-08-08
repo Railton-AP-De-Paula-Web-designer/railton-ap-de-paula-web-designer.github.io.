@@ -23,7 +23,7 @@ const closeButtons = document.querySelectorAll('.btn-close');
 
 closeButtons.forEach((closeButton) => {
     closeButton.addEventListener('click', () => {
-        const container = closeButton.closest('div');
+        const container = closeButton.closest('.container-d, .container-amendoin');
         if (container) {
             // Ao clicar, sempre adiciona a classe 'hide' e remove 'no-scroll'.
             container.classList.add('hide');
