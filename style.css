@@ -6,8 +6,23 @@
 
 }
 
+:root {
+    --background-color: #0a0909;
+    --text-color: #fff;
+      --main-title-color: #0039e3;
+      --shadow-color:rgba(255, 255, 255, 0.6);
+      --modaltext-color: #fff;
+      --modal-background: #0039e3;
+      --button-background: #0039e3;
+      --button-text-color: #fff;
+      --modal-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      --button-text-shadow: 0 0 5px rgba( 0, 0, 0, 0.5);
+    
+}
+
 body {
-    background-color: #0a0909;
+    background-color: var(--background-color);
+    color: var(--text-color);
 
 }
 
@@ -30,7 +45,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     display: flex;
     align-items: center;
 }
@@ -60,7 +75,7 @@ nav {
     /* -linhas com autura almentada*/
     font-weight: 600;
     /* -texto em negrito*/
-    color: #0039e3;
+    color: var(--main-title-color);
     text-shadow: 0px 0px 10px #fff;
     /*-sombra branca ao texto*/
     position: relative;
@@ -473,7 +488,8 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
 
 .botao {
     border-radius: 20px;
-    background-color: #0039e3;
+    background-color: var(--modal-background);
+    color: var(--modal-text-color);
     ;
     color: #fff;
     border: none;
@@ -482,6 +498,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     cursor: pointer;
     position: relative;
     margin-left: 10px;
+    text-shadow: var(--modal-text-shadow);
 }
 
 
@@ -496,29 +513,30 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10002;
     overflow: auto;
     transition: all 0.5s ease;
+    background-color: var(--modal-background);
+    color: var(--modal-text-color);
+    box-shadow: var(--modal-box-shadow);
 }
 
-.container-d {
-    background-color: #1f5b35;
-    color: gold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(55,164, 64, 0.7);
-}
 .container-d h2 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
+    color: var(--modal-text-color);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .container-d p {
     font-size:18px;
     text-align: left;
     line-height: 1.5;
+    letter-spacing: 0.7px;
     margin: 10px 0;
+    color: var(--modal-text-color);
+    text-shadow:0 0 8px rgba(0, 0, 0,  0.4);
 }
 
 .container-d-logo {
@@ -526,12 +544,8 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     height: 30px;
     vertical-align: middle;
 }
-.container-amendoin {
-    background-color: #6a4023;
-    color: peru;
-    text-shadow: 0 0 5px rgba(0. 0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(165, 115, 42, 0,7);
-}
+
+
 .contaner-amendoin h2{
     font-size: 24px;
     margin-bottom: 10px;
@@ -541,7 +555,10 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     font-size: 18px;
     text-align: left;
     line-height: 1.5;
+    letter-spacing: 0.7px;
     margin: 10px 0;
+    color: var(--modal-text-color);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0, 0.4);
 }
 
 .container-amendoin img {
@@ -550,7 +567,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     vertical-align: middle;
 }
 .container-amendoin .paragrafo-amendoin {
-    color: white;;
+    color: white;
 }
 
 
