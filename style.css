@@ -238,7 +238,7 @@ nav {
 
 .mao-container {
     position: absolute;
-    top: 15%;
+    top: 9%;
     left: 50%;
     transform: translate(-50%, -50%);
     /*Posicionar elementos no centro de um contêiner*/
@@ -536,6 +536,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     color: #b3b3b3;
     text-shadow: none;
     line-height: 1.8;
+    letter-spacing: 0.9px;
 }
 
 .bloco-leitura h2 {
@@ -548,3 +549,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.logo-blue-ice, .logo-coco, .logo-chiclete, .logo-chocolate, .logo-doceleite, .logo-goiaba,
+.logo-groselha{
+      width: 30px;
+    /* ou qualquer tamanho que você já use */
+    height: 30px;
+    vertical-align: middle
+}
+
