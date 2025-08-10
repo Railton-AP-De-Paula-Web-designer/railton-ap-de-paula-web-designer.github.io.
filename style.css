@@ -489,10 +489,6 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     vertical-align: middle;
 }
 
-.container-amendoin .paragrafo-amendoin {
-    color: white;
-}
-
 .container h2 {
     font-family: 'bangrs', cursivre;
     font-size: 2em;
@@ -514,5 +510,41 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
 }
 
 .bloco-leitura {
+    margin: auto;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    inset: 0 0 10px rgba(0,255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
+}
+
+.bloco-leitura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5),
+    inset 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.bloco-leitura p {
+    font-family: 'share tech', sans-serif;
+    font-size: 1.em;
+    color: #b3b3b3;
+    text-shadow: none;
+    line-height: 1.8;
+}
+
+.bloco-leitura h2 {
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0,255, 255, 0.8);
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
