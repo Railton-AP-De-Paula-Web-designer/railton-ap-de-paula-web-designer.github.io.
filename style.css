@@ -238,7 +238,7 @@ nav {
 
 .mao-container {
     position: absolute;
-    top: 9%;
+    top: -10;
     left: 50%;
     transform: translate(-50%, -50%);
     /*Posicionar elementos no centro de um contêiner*/
@@ -551,7 +551,8 @@ img {
 }
 
 .logo-blue-ice, .logo-coco, .logo-chiclete, .logo-chocolate, .logo-doceleite, .logo-goiaba,
-.logo-groselha{
+.logo-groselha, .logo-leitinho, .logo-limao, .logo-leite-condensado, .logo-melancia, .logo-morango,
+.logo-milho-verde, .logo-maracuja, .logo-maça, .logo-nata, .logo-tangerina{
       width: 30px;
     /* ou qualquer tamanho que você já use */
     height: 30px;
