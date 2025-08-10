@@ -9,15 +9,9 @@
 :root {
     --background-color: #0a0909;
     --text-color: #fff;
-      --main-title-color: #0039e3;
-      --shadow-color:rgba(255, 255, 255, 0.6);
-      --modaltext-color: #fff;
-      --modal-background: #0039e3;
-      --button-background: #0039e3;
-      --button-text-color: #fff;
-      --modal-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-      --button-text-shadow: 0 0 5px rgba( 0, 0, 0, 0.5);
-    
+    --shadow-color: rgba(255, 255, 255, 0.6);
+
+
 }
 
 body {
@@ -75,7 +69,7 @@ nav {
     /* -linhas com autura almentada*/
     font-weight: 600;
     /* -texto em negrito*/
-    color: var(--main-title-color);
+    color:#0039e3;
     text-shadow: 0px 0px 10px #fff;
     /*-sombra branca ao texto*/
     position: relative;
@@ -92,7 +86,7 @@ nav {
 
 .container {
     position: relative;
-    
+
     /*O overflow é uma propriedade CSS que controla o que acontece quando o conteúdo de
      um elemento ultrapassa seus limites, permitindo escolher entre exibir, cortar ou adicionar scrollbars.*/
 
@@ -177,7 +171,7 @@ nav {
     position: absolute;
     justify-content: flex-end;
     /*jogou o item para a direita*/
-    top: 0;
+    top:  200px;
     right: 20px;
 }
 
@@ -186,7 +180,7 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 80px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .item img {
@@ -244,7 +238,7 @@ nav {
 
 .mao-container {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     /*Posicionar elementos no centro de um contêiner*/
@@ -408,9 +402,6 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     color: deeppink;
 
 }
-
-
-
 .ol-sabores li:nth-child(7) {
     color: rgba(210, 105, 30, 0.562);
 }
@@ -486,118 +477,42 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     vertical-align: middle;
 }
 
-.botao {
-    border-radius: 20px;
-    background-color: var(--modal-background);
-    color: var(--modal-text-color);
-    ;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    padding: 5px 5px;
-    cursor: pointer;
-    position: relative;
-    margin-left: 10px;
-    text-shadow: var(--modal-text-shadow);
-}
-
-
-.container-d, .container-amendoin {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 600px;
-    max-height: 90vh;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 10002;
-    overflow: auto;
-    transition: all 0.5s ease;
-    background-color: var(--modal-background);
-    color: var(--modal-text-color);
-    box-shadow: var(--modal-box-shadow);
-}
-
-.container-d h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: var(--modal-text-color);
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
-
-.container-d p {
-    font-size:18px;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.7px;
-    margin: 10px 0;
-    color: var(--modal-text-color);
-    text-shadow:0 0 8px rgba(0, 0, 0,  0.4);
-}
-
 .container-d-logo {
     width: 30px;
     height: 30px;
     vertical-align: middle;
 }
 
-
-.contaner-amendoin h2{
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.container-amendoin p {
-    font-size: 18px;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.7px;
-    margin: 10px 0;
-    color: var(--modal-text-color);
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0, 0.4);
-}
-
 .container-amendoin img {
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
 }
+
 .container-amendoin .paragrafo-amendoin {
     color: white;
 }
 
+.container h2 {
+    font-family: 'bangrs', cursivre;
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-.btn-close {
-position: absolute;
-top: 10px;
-right: 10px;
-background-color: red;
-border: none;
-color: white;
-font-size: 18px;
-border-radius: 50%;
-width: 40px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-z-index: 10003;
-font-family: arial, sans-serif;
-font-weight:gold
 }
 
-.no-scroll {
-    overflow: hidden;
+.logo-acai {
+    width: 30px;
+    /* ou qualquer tamanho que você já use */
+    height: 30px;
+    vertical-align: middle
 }
 
-/* MODIFICADO: Adicionado efeito de transição para fechar o pop-up */
-.hide {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.8);
+.bloco-leitura {
+    
 }
