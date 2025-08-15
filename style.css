@@ -559,3 +559,41 @@ img {
     vertical-align: middle
 }
 
+@media screen and (max-width: 700px){
+    .mao-container {
+    position: static; /* Remove o posicionamento absoluto */
+    top: auto; /* Remove a posição top */
+    left: auto; /* Remove a posição left */
+    transform: none; /* Remove a transformação de centralização */
+    text-align: center; /* Centraliza os itens em linha */
+    margin-left: -59px;
+    margin-top: 20px; /* Adiciona um espaço para que ele não fique colado no topo */
+    }
+
+  .mao-rede {
+    width: 50px;
+    height: 50px;
+  }
+
+  .h3-efeitos-coloridos {
+    font-size: 24px; /* Diminui o tamanho do texto para melhor leitura */
+  }
+
+  .ol-sabores ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  .ol-sabores li {
+    width: calc(50% - 10px);
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+  }
+
+}
