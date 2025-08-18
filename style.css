@@ -48,6 +48,7 @@ nav ul li a {
     width: 20px;
     height: 20px;
     margin-left: 5px;
+    transform: translateX(12px);
 }
 
 nav {
@@ -171,7 +172,7 @@ nav {
     position: absolute;
     justify-content: flex-end;
     /*jogou o item para a direita*/
-    top:  200px;
+    top:  292px;
     right: 20px;
 }
 
@@ -475,6 +476,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     width: 30px;
     height: 30px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .container-d-logo {
@@ -490,7 +492,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
 }
 
 .container h2 {
-    font-family: 'bangrs', cursivre;
+    font-family: 'bangers', cursivre;
     font-size: 2em;
     color: var(--text-color);
     text-align: center;
@@ -528,6 +530,7 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5),
     inset 0 0 15px rgba(0, 255, 255, 0.4);
+    cursor: pointer;
 }
 
 .bloco-leitura p {
@@ -537,11 +540,14 @@ Isso pode criar um efeito de "fundo deslizante" ou "fundo animado" quando combin
     text-shadow: none;
     line-height: 1.8;
     letter-spacing: 0.9px;
+    cursor: pointer;
 }
 
 .bloco-leitura h2 {
     color: #00ffff;
     text-shadow: 0 0 10px rgba(0,255, 255, 0.8);
+    cursor: pointer;
+    letter-spacing: 1px;
 
 }
 
@@ -558,6 +564,121 @@ img {
     height: 30px;
     vertical-align: middle
 }
+@keyframes mudarCor {
+  0% {
+    background-image: linear-gradient(to right, #fff, #ffd700);
+  }
+  50% {
+    background-image: linear-gradient(to right, #ffd700, #25d366);
+  }
+  100% {
+    background-image: linear-gradient(to right, #25d366, #fff);
+  }
+}
+
+h3,
+p {
+color: azure;
+
+
+}
+
+#carrosel-logo {
+    margin-top: 50px;
+    letter-spacing: 0.7px;
+  color: violet;
+  font-weight: 300;
+  font-size: 50px;
+   text-shadow: 0 0 10px rgba(0,255, 255, 0.8);
+}
+
+.separador-moderno {
+    height: 3px;
+    width:80%;
+    margin:60px auto;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #4b0082, #8a2be2, #4b0082 );
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.75);
+    opacity: 0.8;
+}
+
+.container-carrosel {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 020px rgba(0, 255 255, 0.3);
+
+}
+.carrosel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrosel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrosel-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 370px;
+    border-radius: 10px;
+}
+
+.carrosel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+.carrosel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carrosel-button.prev {
+    left: 10px;
+}
+.carrosel-button.next {
+    right: 10px;
+
+}
+.carrosel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    z-index: 10;
+}
+
+.carrosel-dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.carrosel-dot.active {
+    background:white;
+}
+
 
 @media screen and (max-width: 700px){
     .mao-container {
@@ -595,5 +716,11 @@ img {
     gap: 8px;
 
   }
+  .red-social {
+    position: absolute;
+    justify-content: flex-end;
+    top: 304px;
+    right: 20px;
+}
 
 }
