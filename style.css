@@ -636,25 +636,29 @@ color: azure;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 20px;
     cursor: pointer;
     z-index: 10;
+    font-size: 2.5rem;
     font-size: 24px;
-    border-radius: 50%;
-    transition: background 0.3s ease;
+    border-radius: 25%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 .carrosel-button:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: #00ffff;
+    color: #0a0909;
+    box-shadow: 0 0 15px rgba( 0, 255, 255, 0.8), inset 0 0 10px rgba(0, 255, 255, 0.4);
 }
 
 .carrosel-button.prev {
-    left: 10px;
+    left: 15%;
 }
 .carrosel-button.next {
-    right: 10px;
+    right: 15%;
 
 }
 .carrosel-indicators {
@@ -677,6 +681,41 @@ color: azure;
 }
 .carrosel-dot.active {
     background:white;
+}
+
+.scroll-btn {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 40px;
+    padding: 1px 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+    border: 2px solid #00ffff;
+    background: transparent;
+    color: #00ffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      z-index: 1000;
+
+}
+.scroll-btn:hover {
+    background: #00ffff;
+    color: #0a0909;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), inset 0 0 10px rgba(0, 255, 255, 0.4);
+
+}
+.scroll-up {
+    bottom: 80px;
+}
+.scroll-down {
+    bottom: 20px;
 }
 
 
@@ -719,7 +758,7 @@ color: azure;
   .red-social {
     position: absolute;
     justify-content: flex-end;
-    top: 304px;
+    top: 343px;
     right: 20px;
 }
 
