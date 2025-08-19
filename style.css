@@ -758,7 +758,10 @@ color: azure;
   }
   .red-social {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    gap: 20px;;
     top: 343px;
     right: 20px;
 }
