@@ -761,9 +761,13 @@ color: azure;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 20px;;
+    gap: 40px;
     top: 343px;
-    right: 20px;
+    right: 50px;
+}
+.container-do-link a {
+    padding: 12px 16px;
+    display: inline-block;
 }
 
 }
