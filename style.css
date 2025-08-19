@@ -719,6 +719,7 @@ color: azure;
 }
 
 
+
 @media screen and (max-width: 700px){
     .mao-container {
     position: static; /* Remove o posicionamento absoluto */
