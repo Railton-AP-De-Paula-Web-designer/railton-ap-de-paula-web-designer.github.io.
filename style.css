@@ -873,7 +873,7 @@ color: azure;
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
     .mao-container {
     position: static; /* Remove o posicionamento absoluto */
     top: auto; /* Remove a posição top */
@@ -922,5 +922,41 @@ color: azure;
     padding: 12px 16px;
     display: inline-block;
 }
+
+.footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-brand,
+.footer-social-links,
+.footer-legal-links {
+    flex-basis: 100%;
+    text-align: center;
+}
+.footer-brand h3,
+.brasil-flag-container {
+    justify-content: center;
+}
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-legal-links a {
+    display: block;
+    margin: 10px 0;
+}
+.footer-bottom-row {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.developer-info,
+.footer-coopyright {
+    text-align: center;
+}
+
 
 }
